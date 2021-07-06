@@ -1,0 +1,44 @@
+﻿@model List<test.Net.Models.product>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+
+<div class="table-responsive">
+    <table class="table">
+
+        <tr>
+            <th>Laptop Name </th>
+            <th>Prand</th>
+            <th>price</th>
+            <th></th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            
+    <tr>
+
+        <td>
+            @item.name
+        </td>
+
+        <td>
+            @item.prand
+        </td>
+
+        <td>
+            @item.price
+        </td>
+
+        <td>
+            <button class="btn"> @Html.ActionLink("Details", "Details", new { id = item.productId })</button>
+            <button class="btn"> @Html.ActionLink("MakeOrder", "MakeOrder", new { id = item.productId })</button>
+        </td>
+    </tr>
+        }
+
+    </table>
+</div>

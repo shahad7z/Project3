@@ -1,0 +1,62 @@
+﻿<Properties StartupConfiguration="{1E8D2A09-203E-4498-89FE-E1DBE465FE9C}|Default">
+  <MonoDevelop.Ide.ItemProperties.test.Net PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test.Net/Views/Home/Details.cshtml">
+    <Files>
+      <File FileName="test.Net/Views/Shared/_Layout.cshtml" Line="11" Column="18" IsPinned="True" />
+      <File FileName="test.Net/Startup.cs" />
+      <File FileName="test.Net/Controllers/HomeController.cs" Line="32" Column="1" />
+      <File FileName="test.Net/Models/ErrorViewModel.cs" />
+      <File FileName="test.Net/Models/AppDbContext.cs" />
+      <File FileName="test.Net/appsettings.json" />
+      <File FileName="test.Net/appsettings.Development.json" />
+      <File FileName="test.Net/Models/product.cs" />
+      <File FileName="test.Net/Models/customer.cs" />
+      <File FileName="test.Net/Models/order.cs" />
+      <File FileName="test.Net/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="test.Net/Views/Shared/Error.cshtml" />
+      <File FileName="test.Net/Views/_ViewImports.cshtml" />
+      <File FileName="test.Net/Views/_ViewStart.cshtml" />
+      <File FileName="test.Net/Program.cs" />
+      <File FileName="test.Net/Properties/launchSettings.json" />
+      <File FileName="test.Net/wwwroot/js/site.js" />
+      <File FileName="test.Net/wwwroot/css/site.css" />
+      <File FileName="test.Net/Views/Home/Registration.cshtml" Line="1" Column="1" />
+      <File FileName="test.Net/Repository/IproductsService.cs" />
+      <File FileName="test.Net/Repository/productsService.cs" />
+      <File FileName="DataAccess.csproj" />
+      <File FileName="test.Net/Views/Home/MakeOrder.cshtml" Line="1" Column="1" />
+      <File FileName="test.Net/Views/Home/Details.cshtml" Line="1" Column="1" />
+      <File FileName="test.Net/Views/Home/Index.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test.Net" expanded="True">
+            <Node name="test.Net" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Details.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="images" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

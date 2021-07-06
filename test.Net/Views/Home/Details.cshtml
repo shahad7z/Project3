@@ -1,0 +1,58 @@
+﻿@model test.Net.Models.product
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<br />
+<button class="btn btn-default btn-sm">@Html.ActionLink("Back to List", "Index","Home")</button><br/><br/>
+
+<div class="container">
+    @Html.HiddenFor(x => x.productId)
+
+    @if (Model.productId == 1)
+    {
+        <img src="~/images/Apple.png" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+    }
+    else if (Model.productId == 2)
+    {
+        <img src="~/images/Huawei.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+    }
+    else if (Model.productId == 3)
+    {
+        <img src="~/images/Microsoft.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+    }
+    else if (Model.productId == 4)
+    {
+        <img src="~/images/Lenovo.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+    }
+    else if (Model.productId == 5)
+    {
+        <img src="~/images/DELL.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+    }
+
+
+    <div class="row">
+        <div class="col-sm-3">Name</div>
+        <div class="col-sm-9">@Html.DisplayFor(c => c.name)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">prand</div>
+        <div class="col-sm-9">@Html.DisplayFor(c => c.prand)</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-3">price</div>
+        <div class="col-sm-9">@Html.DisplayFor(c => c.price)</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-3">Discription</div>
+        <div class="col-sm-9">@Html.DisplayFor(c => c.Discription)</div>
+    </div>
+
+
+
+</div>

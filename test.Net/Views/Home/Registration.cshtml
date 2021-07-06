@@ -1,0 +1,52 @@
+﻿
+@model test.Net.Models.customer
+@{
+    ViewData["Title"] = "Registration";
+    Layout = "_Layout";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Please Enter your Information.</p>
+
+<div class="container">
+    @using (Html.BeginForm("Registrationinfo", "Home", FormMethod.Post))
+    {
+
+        @Html.HiddenFor(x => x.customerID)
+        <div class="row">
+            <div class="col-sm-3">Name</div>
+            <div class="col-sm-9">@Html.TextBoxFor(c => c.Name)</div>
+        </div> <br/>
+
+        <div class="row">
+            <div class="col-sm-3">Email</div>
+            <div class="col-sm-9">@Html.TextBoxFor(c => c.Email)</div>
+        </div> <br/>
+
+
+        <div class="row">
+            <div class="col-sm-3">Address</div>
+            <div class="col-sm-9">@Html.TextBoxFor(c => c.Address)</div>
+        </div> <br/>
+
+
+        <div class="row">
+            <div class="col-sm-3">User Name</div>
+            <div class="col-sm-9">@Html.TextBoxFor(c => c.UserName)</div>
+        </div> <br/>
+
+        <div class="row">
+            <div class="col-sm-3">password</div>
+            <div class="col-sm-9">@Html.PasswordFor(c => c.password)</div>
+        </div> <br/>
+
+
+        <div class="row">
+            <div class="col-sm-12 text-left">
+                <input class="btn btn-success" type ="submit" value="submit"/>
+            </div>
+        </div>
+
+
+    }
+</div>

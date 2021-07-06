@@ -1,0 +1,46 @@
+﻿
+@model test.Net.Models.product
+@{
+    ViewData["Title"] = "order";
+    Layout = "_Layout";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Please Enter your Information.</p>
+
+<div class="container">
+    @using (Html.BeginForm("SaveOrder", "Home", FormMethod.Post))
+    {
+
+        @Html.HiddenFor(x => x.productId)
+
+        @Html.HiddenFor(x => x.Order.customerID)
+
+        @Html.HiddenFor(x => x.Order.orderID)
+
+        <div class="row">
+            <div class="col-sm-3">Laptop Name</div>
+            <div class="col-sm-9">@Html.DisplayFor(c => c.name)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">price</div>
+            <div class="col-sm-9">@Html.DisplayFor(c => c.price)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">NumperOfItem</div>
+            <div class="col-sm-9">@Html.TextBoxFor(c => c.Order.NumperOfItem)</div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-12 text-left">
+                <input class="btn btn-success" type="submit" value="submit" />
+            </div>
+        </div>
+
+
+    }
+</div>
